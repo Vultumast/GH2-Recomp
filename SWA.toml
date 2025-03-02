@@ -1,0 +1,25 @@
+[main]
+file_path = "default.xex"
+out_directory_path = "ppc"
+switch_table_file_path = "SWA_switch_tables.toml"
+
+skip_lr = true
+skip_msr = true
+ctr_as_local = true
+xer_as_local = true
+reserved_as_local = true
+cr_as_local = true
+non_argument_as_local = true
+non_volatile_as_local = true
+
+restgprlr_14_address = 0x8239bd10
+savegprlr_14_address = 0x8239bcc0
+restfpr_14_address = 0x8239d5fc
+savefpr_14_address = 0x8239d5b0
+restvmx_14_address = 0x826a7c88
+savevmx_14_address = 0x826a79f0
+restvmx_64_address = 0x826a7d1c
+savevmx_64_address = 0x826a7a84
+
+longjmp_address = 0x826a70b0
+setjmp_address = 0x826a71c8
